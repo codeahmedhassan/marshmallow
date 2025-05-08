@@ -15,7 +15,7 @@ export default function ServicesSection() {
         {
             title: "Global Financial Solutions",
             desc: "With Currency Exchange & Payment Assistance, we make international transactions smooth and hassle-free.",
-            icon: "/Globedollar.svg",
+            icon: "/globedollar.svg",
         },
         {
             title: "Innovative Branding & Digital Excellence",
