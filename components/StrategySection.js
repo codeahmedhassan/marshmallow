@@ -40,7 +40,7 @@ import Image from "next/image";
       id: 5,
       title: "Optimize",
       description: "Quarterly reviews & proactive updates",
-      icon: 'optimize.svg',
+      icon: '/optimize.svg',
       align: "left",
     },
   ];

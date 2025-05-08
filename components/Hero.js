@@ -1,7 +1,9 @@
 "use client";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 export default function HeroSection() {
+  const router = useRouter();
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-[#0C2B5F] dark:bg-gradient-to-br dark:bg-[#65A4D626] py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="max-w-4xl w-full text-center z-10">
@@ -26,10 +28,10 @@ export default function HeroSection() {
           </motion.p>
 
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6">
-            <button className="bg-white text-[#0C2B5F] px-6 py-2 rounded-lg text-sm font-semibold transition duration-300 shadow-lg w-full sm:w-auto">
+            <button onClick={() => {router.push('/service')}} className="bg-white text-[#0C2B5F] px-6 py-2 rounded-lg text-sm font-semibold transition duration-300 shadow-lg w-full cursor-pointer sm:w-auto">
               Explore Services
             </button>
-            <button className="bg-white text-[#0C2B5F] px-6 py-2 rounded-lg text-sm font-semibold transition duration-300 shadow-lg w-full sm:w-auto">
+            <button className="bg-white text-[#0C2B5F] px-6 py-2 rounded-lg text-sm cursor-pointer font-semibold transition duration-300 shadow-lg w-full sm:w-auto">
               Discover Bayko Token
             </button>
           </div>

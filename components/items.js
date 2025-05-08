@@ -15,7 +15,7 @@ export default function ServicesSection() {
         {
             title: "Global Financial Solutions",
             desc: "With Currency Exchange & Payment Assistance, we make international transactions smooth and hassle-free.",
-            icon: "/Globedollar.svg",
+            icon: "/globedollar.svg",
         },
         {
             title: "Innovative Branding & Digital Excellence",
@@ -40,7 +40,7 @@ export default function ServicesSection() {
     ];
 
     return (
-        <section className="py-20 px-6 bg-white dark:bg-[#0A0A0A]">
+        <section className="py-20 px-6">
             <div className="max-w-7xl mx-auto text-center">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                     {services.map((service, index) => {
@@ -51,14 +51,14 @@ export default function ServicesSection() {
                                 className={`bg-blue-50 dark:bg-[#65A4D626] hover:bg-blue-100 transition duration-300 p-8 shadow-sm text-center ${isLast ? "lg:col-span-1 lg:col-start-2" : ""
                                     }`}
                             >
-                                <div className="flex justify-center mb-10">
+                                <div className="flex justify-center mb-20">
                                     <Image className="object-contain h-24 w-24 dark:hidden" width={1000} height={1000} src={service.icon} alt={service.title} />
                                     <Image className="object-contain h-24 w-24 hidden dark:block" width={1000} height={1000} src={service.icon.replace(".svg", "").replace("/", "/dark") + ".svg"} alt={service.title} />
                                 </div>
-                                <h3 className="text-md font-semibold text-gray-800 dark:text-white mb-3">
+                                <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
                                     {service.title}
                                 </h3>
-                                <p className="text-gray-600 text-[10px] dark:text-white">{service.desc}</p>
+                                <p className="text-gray-600 text-sm dark:text-white">{service.desc}</p>
                             </div>
                         );
                     })}

@@ -3,6 +3,7 @@ import Link from "next/link";
 import {
   FaFacebookF,
   FaInstagram,
+  FaWhatsapp,
   FaXTwitter
 } from "react-icons/fa6";
 
@@ -14,7 +15,7 @@ export default function FooterSection() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 dark:text-white text-gray-700">
           {/* Logo + Name */}
           <div className="flex flex-col items-center justify-center">
-            <Image src="/logo.png" alt="Company Logo" width={60} height={60} />
+            <Image src="/logo.png" alt="Company Logo" width={150} height={150} />
             <h2 className="mt-2 text-lg font-bold">Marshmallow.Projects</h2>
           </div>
 
@@ -44,9 +45,10 @@ export default function FooterSection() {
             <div>
               <h3 className="text-md font-semibold mb-3">Follow Us</h3>
               <div className="flex space-x-4">
-                <Link href="#" aria-label="Facebook" className="hover:text-blue-600"><FaFacebookF size={20} /></Link>
-                <Link href="#" aria-label="Instagram" className="hover:text-pink-500"><FaInstagram size={20} /></Link>
-                <Link href="#" aria-label="Twitter/X" className="hover:text-black"><FaXTwitter size={20} /></Link>
+                <Link href="https://www.facebook.com/Marshmallow.Projects" aria-label="Facebook" className="hover:text-blue-600"><FaFacebookF size={20} /></Link>
+                <Link href="https://www.instagram.com/marshmallow.projects/" aria-label="Instagram" className="hover:text-pink-500"><FaInstagram size={20} /></Link>
+                <Link href="https://x.com/MarshmallowProj" aria-label="Twitter/X" className="hover:text-black"><FaXTwitter size={20} /></Link>
+                <Link href="https://whatsapp.com/channel/0029Vao8DJo23n3XnmFvh23X" aria-label="Twitter/X" className="hover:text-green-600"><FaWhatsapp size={20} /></Link>
               </div>
             </div>
           </div>

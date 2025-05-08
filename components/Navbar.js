@@ -30,7 +30,7 @@ export default function Navbar() {
     return (
         <nav className="bg-[#F5F5F5] dark:bg-[#1E1E1EFA] border-b border-gray-200 dark:border-gray-700">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex items-center justify-between h-24 relative">
+                <div className="flex items-center justify-between h-32 relative">
                     {/* Logo */}
                     <div className="z-50">
                         <Link href="/">
@@ -39,7 +39,7 @@ export default function Navbar() {
                                 alt="Logo"
                                 width={182}
                                 height={194}
-                                className="w-16"
+                                className="w-24"
                             />
                         </Link>
                     </div>
@@ -59,7 +59,7 @@ export default function Navbar() {
 
                     {/* Desktop Right Side */}
                     <div className="hidden md:flex items-center gap-4">
-                        <button className="bg-gradient-to-r from-[#65A4D6] to-[#0C2B5F] text-white px-8 py-2 rounded-lg transition-transform duration-300 font-semibold text-sm shadow-lg">
+                        <button className="bg-gradient-to-r from-[#65A4D6] to-[#0C2B5F] text-white px-8 py-2 rounded-lg transition-transform duration-300 font-semibold text-sm shadow-lg cursor-pointer">
                             Get in touch
                         </button>
                         <ModeToggle />
@@ -97,7 +97,7 @@ export default function Navbar() {
                                                     {link.name}
                                                 </Link>
                                             ))}
-                                            <button className="bg-gradient-to-r from-[#65A4D6] to-[#0C2B5F] text-white px-6 py-2 rounded-lg font-semibold text-sm shadow-lg mt-4">
+                                            <button className="bg-gradient-to-r from-[#65A4D6] to-[#0C2B5F] text-white px-6 py-2 rounded-lg font-semibold text-sm shadow-lg mt-4 cursor-pointer">
                                                 Get in touch
                                             </button>
                                         </div>

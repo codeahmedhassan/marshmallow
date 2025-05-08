@@ -13,7 +13,7 @@ export default function Home() {
         <HeroSection />
         <ServicesSection />
       </div>
-      <div className="flex flex-col items-center justify-center mb-30 mt-40 px-4 text-center sm:px-6 lg:px-8">
+      <div className="flex flex-col items-center justify-center mb-10 mt-40 px-4 text-center sm:px-6 lg:px-8">
         <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white">
           Why Marshmallow.Projects?
         </h3>
